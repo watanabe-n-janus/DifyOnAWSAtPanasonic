@@ -1,0 +1,799 @@
+{
+  "version": "39.0.0",
+  "artifacts": {
+    "DifyOnAwsAtPanasonicStack.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "DifyOnAwsAtPanasonicStack.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "DifyOnAwsAtPanasonicStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://822356301759/ap-northeast-1",
+      "properties": {
+        "templateFile": "DifyOnAwsAtPanasonicStack.template.json",
+        "terminationProtection": false,
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::822356301759:role/cdk-hnb659fds-deploy-role-822356301759-ap-northeast-1",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::822356301759:role/cdk-hnb659fds-cfn-exec-role-822356301759-ap-northeast-1",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-822356301759-ap-northeast-1/768b3b7e6d9f08e4bc7a37767bade59ad8bc445f549c2874100ee642d3f7cde4.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "DifyOnAwsAtPanasonicStack.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::822356301759:role/cdk-hnb659fds-lookup-role-822356301759-ap-northeast-1",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "DifyOnAwsAtPanasonicStack.assets"
+      ],
+      "metadata": {
+        "/DifyOnAwsAtPanasonicStack/Vpc/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Vpc8378EB38"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Vpc/PublicSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet1Subnet5C2D37C4"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Vpc/PublicSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet1RouteTable6C95E38E"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Vpc/PublicSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet1RouteTableAssociation97140677"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Vpc/PublicSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet1DefaultRoute3DA9E72A"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Vpc/PublicSubnet1/NatInstance/InstanceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet1NatInstanceInstanceRole9D835E32"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Vpc/PublicSubnet1/NatInstance/InstanceProfile": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet1NatInstanceInstanceProfileEE10C485"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Vpc/PublicSubnet1/NatInstance/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet1NatInstance57B636B8"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Vpc/PublicSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet2Subnet691E08A3"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Vpc/PublicSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet2RouteTable94F7E489"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Vpc/PublicSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet2RouteTableAssociationDD5762D8"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Vpc/PublicSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet2DefaultRoute97F91067"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Vpc/PrivateSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPrivateSubnet1Subnet536B997A"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Vpc/PrivateSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPrivateSubnet1RouteTableB2C5B500"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Vpc/PrivateSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPrivateSubnet1RouteTableAssociation70C59FA6"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Vpc/PrivateSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPrivateSubnet1DefaultRouteBE02A9ED"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Vpc/PrivateSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPrivateSubnet2Subnet3788AAA1"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Vpc/PrivateSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPrivateSubnet2RouteTableA678073B"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Vpc/PrivateSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPrivateSubnet2RouteTableAssociationA89CAD56"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Vpc/PrivateSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPrivateSubnet2DefaultRoute060D2087"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Vpc/IGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcIGWD7BA715C"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Vpc/VPCGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcVPCGWBF912B6E"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Vpc/NatSecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcNatSecurityGroup8DA26EDC"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Vpc/RestrictDefaultSecurityGroupCustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcRestrictDefaultSecurityGroupCustomResourceC73DA2BE"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/SsmParameterValue:--aws--service--ami-amazon-linux-latest--al2023-ami-kernel-6.1-arm64:C96584B6-F00A-464E-AD19-53AFF4B05118.Parameter": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SsmParameterValueawsserviceamiamazonlinuxlatestal2023amikernel61arm64C96584B6F00A464EAD1953AFF4B05118Parameter"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Custom::VpcRestrictDefaultSGCustomResourceProvider": [
+          {
+            "type": "aws:cdk:is-custom-resource-handler-customResourceProvider",
+            "data": true
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Custom::VpcRestrictDefaultSGCustomResourceProvider/Role": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomVpcRestrictDefaultSGCustomResourceProviderRole26592FE0"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Custom::VpcRestrictDefaultSGCustomResourceProvider/Handler": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomVpcRestrictDefaultSGCustomResourceProviderHandlerDC833E5E"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Cluster/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ClusterEB0386A7"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Redis/SubnetGroup": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RedisSubnetGroup2387CBFF"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Redis/SecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RedisSecurityGroupC1E9FD21"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Redis/SecurityGroup/from DifyOnAwsAtPanasonicStackApiServiceFargateServiceSecurityGroup6D32CFEF:6379": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RedisSecurityGroupfromDifyOnAwsAtPanasonicStackApiServiceFargateServiceSecurityGroup6D32CFEF6379130F8C93"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Redis/SecurityGroup/from DifyOnAwsAtPanasonicStackWorkerServiceFargateServiceSecurityGroupD8D3DFDD:6379": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RedisSecurityGroupfromDifyOnAwsAtPanasonicStackWorkerServiceFargateServiceSecurityGroupD8D3DFDD6379291807FD"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Redis/AuthToken/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RedisAuthToken9E34F6A5"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Redis/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RedisFF642DF2"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Redis/BrokerUrl/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RedisBrokerUrlA8582E06"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/StorageBucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "StorageBucket19DB2FF8"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/StorageBucket/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "StorageBucketPolicy41A048DB"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/StorageBucket/AutoDeleteObjectsCustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "StorageBucketAutoDeleteObjectsCustomResource105C81BD"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Custom::S3AutoDeleteObjectsCustomResourceProvider": [
+          {
+            "type": "aws:cdk:is-custom-resource-handler-customResourceProvider",
+            "data": true
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Custom::S3AutoDeleteObjectsCustomResourceProvider/Role": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomS3AutoDeleteObjectsCustomResourceProviderRole3B1BD092"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Custom::S3AutoDeleteObjectsCustomResourceProvider/Handler": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomS3AutoDeleteObjectsCustomResourceProviderHandler9D90184F"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/EcsTaskRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EcsTaskRole8DFA0181"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/EcsTaskRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EcsTaskRoleDefaultPolicy50882C77"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Alb/Certificate/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AlbCertificate78F220B5"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Alb/Resource/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AlbC1372A32"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Alb/Resource/SecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AlbSecurityGroup433229ED"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Alb/Resource/SecurityGroup/to DifyOnAwsAtPanasonicStackApiServiceFargateServiceSecurityGroup6D32CFEF:5001": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AlbSecurityGrouptoDifyOnAwsAtPanasonicStackApiServiceFargateServiceSecurityGroup6D32CFEF5001C7E0483A"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Alb/Resource/SecurityGroup/to DifyOnAwsAtPanasonicStackWebServiceFargateServiceSecurityGroup88FB2D6E:3000": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AlbSecurityGrouptoDifyOnAwsAtPanasonicStackWebServiceFargateServiceSecurityGroup88FB2D6E30006469C92D"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Alb/Resource/Listener/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AlbListener318AEEBA"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Alb/Resource/Listener/Api0Rule/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AlbListenerApi0Rule033B7A48"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Alb/Resource/Listener/Api1Rule/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AlbListenerApi1RuleDF535F10"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Alb/Resource/Listener/Web0Rule/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AlbListenerWeb0RuleE10BEE0F"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Alb/AliasRecord/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AlbAliasRecordEE9D42DE"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Alb/ApiTargetGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AlbApiTargetGroup4B6AF19C"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Alb/WebTargetGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AlbWebTargetGroupC65B2BDF"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/WebAcl": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "WebAcl"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/WebAclAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "WebAclAssociation"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Postgres/ParameterGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PostgresParameterGroupC3694DF2"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Postgres/Cluster/Subnets/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PostgresClusterSubnets99BD7A61"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Postgres/Cluster/SecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PostgresClusterSecurityGroup08DE6EE8"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Postgres/Cluster/SecurityGroup/from DifyOnAwsAtPanasonicStackApiServiceFargateServiceSecurityGroup6D32CFEF:{IndirectPort}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PostgresClusterSecurityGroupfromDifyOnAwsAtPanasonicStackApiServiceFargateServiceSecurityGroup6D32CFEFIndirectPort0203EB3C"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Postgres/Cluster/SecurityGroup/from DifyOnAwsAtPanasonicStackWorkerServiceFargateServiceSecurityGroupD8D3DFDD:{IndirectPort}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PostgresClusterSecurityGroupfromDifyOnAwsAtPanasonicStackWorkerServiceFargateServiceSecurityGroupD8D3DFDDIndirectPort4B4F9673"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Postgres/Cluster/Secret/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PostgresClusterSecretC5EAFDEC"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Postgres/Cluster/Secret/Attachment/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PostgresClusterSecretAttachment8DDCF2A8"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Postgres/Cluster/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PostgresCluster53E5BDAB"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Postgres/Cluster/Writer/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PostgresClusterWriterF88DD8CC"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Postgres/Query0/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PostgresQuery0FD53F567"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Postgres/Query0/CustomResourcePolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PostgresQuery0CustomResourcePolicy41175230"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Postgres/WaitForHttpEndpointReady/Default/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PostgresWaitForHttpEndpointReady6D04AFAC"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Postgres/Query1/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PostgresQuery1B175C979"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/Postgres/Query1/CustomResourcePolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PostgresQuery1CustomResourcePolicy1E34BE89"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/AWS679f53fac002430cb0da5b7982bd2287": [
+          {
+            "type": "aws:cdk:is-custom-resource-handler-singleton",
+            "data": true
+          },
+          {
+            "type": "aws:cdk:is-custom-resource-handler-runtime-family",
+            "data": 0
+          },
+          {
+            "type": "aws:cdk:is-custom-resource-handler-singleton",
+            "data": true
+          },
+          {
+            "type": "aws:cdk:is-custom-resource-handler-runtime-family",
+            "data": 0
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/AWS679f53fac002430cb0da5b7982bd2287/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AWS679f53fac002430cb0da5b7982bd2287ServiceRoleC1EA0FF2"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/AWS679f53fac002430cb0da5b7982bd2287/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AWS679f53fac002430cb0da5b7982bd2287ServiceRoleDefaultPolicyD28E1A5E"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/AWS679f53fac002430cb0da5b7982bd2287/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AWS679f53fac002430cb0da5b7982bd22872D164C4C"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/TimeSleepCustomResourceHandler494c1b460d2f4e3b9bfd0b2cf10162f9/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TimeSleepCustomResourceHandler494c1b460d2f4e3b9bfd0b2cf10162f9ServiceRole47E386BD"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/TimeSleepCustomResourceHandler494c1b460d2f4e3b9bfd0b2cf10162f9/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TimeSleepCustomResourceHandler494c1b460d2f4e3b9bfd0b2cf10162f981117264"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/ApiService/Task/TaskRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiServiceTaskTaskRole06F87EBE"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/ApiService/Task/TaskRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiServiceTaskTaskRoleDefaultPolicy982AD2DC"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/ApiService/Task/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiServiceTask878B1807"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/ApiService/Task/Main/LogGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiServiceTaskMainLogGroup4A8BF33F"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/ApiService/Task/ExecutionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiServiceTaskExecutionRoleFE812553"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/ApiService/Task/ExecutionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiServiceTaskExecutionRoleDefaultPolicy38AB6296"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/ApiService/Task/Sandbox/LogGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiServiceTaskSandboxLogGroupDDF292A0"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/ApiService/Task/ExternalKnowledgeBaseAPI/LogGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiServiceTaskExternalKnowledgeBaseAPILogGroupE8D1DD85"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/ApiService/EncryptionSecret/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiServiceEncryptionSecretF73F9ECD"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/ApiService/FargateService/Service": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiServiceFargateServiceE4EA9E4E"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/ApiService/FargateService/SecurityGroup": [
+          {
+            "type": "aws:cdk:warning",
+            "data": "Ignoring Egress rule since 'allowAllOutbound' is set to true; To add customized rules, set allowAllOutbound=false on the SecurityGroup [ack: @aws-cdk/aws-ec2:ipv4IgnoreEgressRule]",
+            "trace": [
+              "Annotations.addMessage (/Users/norihisa/Projects/Panasonic/DifyOnAWSAtPanasonic/node_modules/aws-cdk-lib/core/lib/annotations.js:1:1608)",
+              "Annotations.addWarningV2 (/Users/norihisa/Projects/Panasonic/DifyOnAWSAtPanasonic/node_modules/aws-cdk-lib/core/lib/annotations.js:1:825)",
+              "SecurityGroup.addEgressRule (/Users/norihisa/Projects/Panasonic/DifyOnAWSAtPanasonic/node_modules/aws-cdk-lib/aws-ec2/lib/security-group.js:1:7618)",
+              "/Users/norihisa/Projects/Panasonic/DifyOnAWSAtPanasonic/node_modules/aws-cdk-lib/aws-ec2/lib/connections.js:1:1860",
+              "ReactiveList.forEachAndForever (/Users/norihisa/Projects/Panasonic/DifyOnAWSAtPanasonic/node_modules/aws-cdk-lib/aws-ec2/lib/connections.js:1:5923)",
+              "/Users/norihisa/Projects/Panasonic/DifyOnAWSAtPanasonic/node_modules/aws-cdk-lib/aws-ec2/lib/connections.js:1:1821",
+              "ReactiveList.forEachAndForever (/Users/norihisa/Projects/Panasonic/DifyOnAWSAtPanasonic/node_modules/aws-cdk-lib/aws-ec2/lib/connections.js:1:5923)",
+              "Connections.allowTo (/Users/norihisa/Projects/Panasonic/DifyOnAWSAtPanasonic/node_modules/aws-cdk-lib/aws-ec2/lib/connections.js:1:1749)",
+              "Connections.allowToDefaultPort (/Users/norihisa/Projects/Panasonic/DifyOnAWSAtPanasonic/node_modules/aws-cdk-lib/aws-ec2/lib/connections.js:1:5079)",
+              "new ApiService (/Users/norihisa/Projects/Panasonic/DifyOnAWSAtPanasonic/lib/constructs/dify-services/api.ts:258:25)",
+              "new DifyOnAwsAtPanasonicStack (/Users/norihisa/Projects/Panasonic/DifyOnAWSAtPanasonic/lib/dify_on_aws_at_panasonic-stack.ts:231:17)",
+              "Object.<anonymous> (/Users/norihisa/Projects/Panasonic/DifyOnAWSAtPanasonic/bin/dify_on_aws_at_panasonic.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1364:14)",
+              "Module.m._compile (/Users/norihisa/Projects/Panasonic/DifyOnAWSAtPanasonic/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1422:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/norihisa/Projects/Panasonic/DifyOnAWSAtPanasonic/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:1203:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1019:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:128:12)",
+              "phase4 (/Users/norihisa/Projects/Panasonic/DifyOnAWSAtPanasonic/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/norihisa/Projects/Panasonic/DifyOnAWSAtPanasonic/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/norihisa/Projects/Panasonic/DifyOnAWSAtPanasonic/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/norihisa/Projects/Panasonic/DifyOnAWSAtPanasonic/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1364:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1422:10)",
+              "Module.load (node:internal/modules/cjs/loader:1203:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1019:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:128:12)",
+              "node:internal/main/run_main_module:28:49"
+            ]
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/ApiService/FargateService/SecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiServiceFargateServiceSecurityGroupE31C96C6"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/ApiService/FargateService/SecurityGroup/from DifyOnAwsAtPanasonicStackAlbSecurityGroup0B7E9E63:5001": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiServiceFargateServiceSecurityGroupfromDifyOnAwsAtPanasonicStackAlbSecurityGroup0B7E9E635001BB911088"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/WebService/Task/TaskRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "WebServiceTaskTaskRole22AA8FAB"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/WebService/Task/TaskRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "WebServiceTaskTaskRoleDefaultPolicyC2E32007"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/WebService/Task/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "WebServiceTaskF9926E9D"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/WebService/Task/Main/LogGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "WebServiceTaskMainLogGroup38DB76FC"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/WebService/Task/ExecutionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "WebServiceTaskExecutionRole4406CA16"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/WebService/Task/ExecutionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "WebServiceTaskExecutionRoleDefaultPolicyA297AC39"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/WebService/FargateService/Service": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "WebServiceFargateService5BB9529D"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/WebService/FargateService/SecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "WebServiceFargateServiceSecurityGroup60FE78D6"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/WebService/FargateService/SecurityGroup/from DifyOnAwsAtPanasonicStackAlbSecurityGroup0B7E9E63:3000": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "WebServiceFargateServiceSecurityGroupfromDifyOnAwsAtPanasonicStackAlbSecurityGroup0B7E9E633000501B38B8"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/WorkerService/Task/TaskRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "WorkerServiceTaskTaskRoleC99169CE"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/WorkerService/Task/TaskRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "WorkerServiceTaskTaskRoleDefaultPolicyB05718F5"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/WorkerService/Task/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "WorkerServiceTaskEB3CD2E8"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/WorkerService/Task/Main/LogGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "WorkerServiceTaskMainLogGroupA90F15B8"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/WorkerService/Task/ExecutionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "WorkerServiceTaskExecutionRoleFF871AC9"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/WorkerService/Task/ExecutionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "WorkerServiceTaskExecutionRoleDefaultPolicyD3383FFB"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/WorkerService/FargateService/Service": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "WorkerServiceFargateService83FD39CB"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/WorkerService/FargateService/SecurityGroup": [
+          {
+            "type": "aws:cdk:warning",
+            "data": "Ignoring Egress rule since 'allowAllOutbound' is set to true; To add customized rules, set allowAllOutbound=false on the SecurityGroup [ack: @aws-cdk/aws-ec2:ipv4IgnoreEgressRule]",
+            "trace": [
+              "Annotations.addMessage (/Users/norihisa/Projects/Panasonic/DifyOnAWSAtPanasonic/node_modules/aws-cdk-lib/core/lib/annotations.js:1:1608)",
+              "Annotations.addWarningV2 (/Users/norihisa/Projects/Panasonic/DifyOnAWSAtPanasonic/node_modules/aws-cdk-lib/core/lib/annotations.js:1:825)",
+              "SecurityGroup.addEgressRule (/Users/norihisa/Projects/Panasonic/DifyOnAWSAtPanasonic/node_modules/aws-cdk-lib/aws-ec2/lib/security-group.js:1:7618)",
+              "/Users/norihisa/Projects/Panasonic/DifyOnAWSAtPanasonic/node_modules/aws-cdk-lib/aws-ec2/lib/connections.js:1:1860",
+              "ReactiveList.forEachAndForever (/Users/norihisa/Projects/Panasonic/DifyOnAWSAtPanasonic/node_modules/aws-cdk-lib/aws-ec2/lib/connections.js:1:5923)",
+              "/Users/norihisa/Projects/Panasonic/DifyOnAWSAtPanasonic/node_modules/aws-cdk-lib/aws-ec2/lib/connections.js:1:1821",
+              "ReactiveList.forEachAndForever (/Users/norihisa/Projects/Panasonic/DifyOnAWSAtPanasonic/node_modules/aws-cdk-lib/aws-ec2/lib/connections.js:1:5923)",
+              "Connections.allowTo (/Users/norihisa/Projects/Panasonic/DifyOnAWSAtPanasonic/node_modules/aws-cdk-lib/aws-ec2/lib/connections.js:1:1749)",
+              "Connections.allowToDefaultPort (/Users/norihisa/Projects/Panasonic/DifyOnAWSAtPanasonic/node_modules/aws-cdk-lib/aws-ec2/lib/connections.js:1:5079)",
+              "new WorkerService (/Users/norihisa/Projects/Panasonic/DifyOnAWSAtPanasonic/lib/constructs/dify-services/worker.ts:128:25)",
+              "new DifyOnAwsAtPanasonicStack (/Users/norihisa/Projects/Panasonic/DifyOnAWSAtPanasonic/lib/dify_on_aws_at_panasonic-stack.ts:248:5)",
+              "Object.<anonymous> (/Users/norihisa/Projects/Panasonic/DifyOnAWSAtPanasonic/bin/dify_on_aws_at_panasonic.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1364:14)",
+              "Module.m._compile (/Users/norihisa/Projects/Panasonic/DifyOnAWSAtPanasonic/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1422:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/norihisa/Projects/Panasonic/DifyOnAWSAtPanasonic/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:1203:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1019:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:128:12)",
+              "phase4 (/Users/norihisa/Projects/Panasonic/DifyOnAWSAtPanasonic/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/norihisa/Projects/Panasonic/DifyOnAWSAtPanasonic/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/norihisa/Projects/Panasonic/DifyOnAWSAtPanasonic/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/norihisa/Projects/Panasonic/DifyOnAWSAtPanasonic/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1364:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1422:10)",
+              "Module.load (node:internal/modules/cjs/loader:1203:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1019:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:128:12)",
+              "node:internal/main/run_main_module:28:49"
+            ]
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/WorkerService/FargateService/SecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "WorkerServiceFargateServiceSecurityGroupEC8152E8"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/DifyUrl": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DifyUrl"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/DifyOnAwsAtPanasonicStack/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "DifyOnAwsAtPanasonicStack"
+    },
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    }
+  }
+}
