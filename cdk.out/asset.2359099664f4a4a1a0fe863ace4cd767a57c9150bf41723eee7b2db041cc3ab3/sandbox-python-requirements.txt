@@ -1,3 +1,0 @@
-# Here you can add Python packages you want to use in Dify sandbox.
-boto3
-numpy
