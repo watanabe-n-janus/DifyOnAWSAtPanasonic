@@ -7,7 +7,7 @@ new DifyOnAwsAtPanasonicStack(app, "DifyOnAwsAtPanasonicStack", {
   env: {
     region: "ap-northeast-1",
     // You need to explicitly set AWS account ID when you look up an existing VPC.
-    account: "822356301759",
+    account: "nnnnnnnnnnn",
   },
   // Allow access from the Internet. Narrow this down if you want further security.
   allowedCidrs: ["0.0.0.0/0"],
@@ -26,9 +26,9 @@ new DifyOnAwsAtPanasonicStack(app, "DifyOnAwsAtPanasonicStack", {
   cheapVpc: true,
   enableAuroraScalesToZero: false,
   //hostedZoneIdとdomainNameはセットで指定
-  hostedZoneId: "Z06030742IKPUQRDA2V4Z", // PanasonicのRoute53のHosted Zone ID
-  domainName: "janus-web-service.com",
-  subDomainName: "dify",
+  hostedZoneId: "xxxxxxxxxxx", // PanasonicのRoute53のHosted Zone ID
+  domainName: "yyyyyyyyy",
+  subDomainName: "zzzzzzzz",
 
   // Please see DifyOnAwsStackProps in lib/dify-on-aws-stack.ts for all the available properties
 });
